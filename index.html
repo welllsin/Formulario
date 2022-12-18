@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>FORMULARIOS</h1>
+
+    <h2>INPUT</h2>
+
+    <p>
+      input O elemento HTML input é usado para criar controles interativos para
+      <br />
+      formulários baseados na web para receber dados do usuário. A semântica de
+      <br />
+      um input varia consideravelmente dependendo do valor de seu atributo type
+    </p>
+
+    <h3>TEXT PASSWORD <br />(obs:submit,button e reset)</h3>
+
+    <form name="form" action="#" method="get">
+      <label>name:</label
+      ><input
+        class="quebra"
+        type="text"
+        name="f-nome"
+        size="15px"
+        maxlength="15"
+      />
+      <label>pin:</label
+      ><input
+        class="quebra"
+        type="password"
+        name="f-pin"
+        size="10px"
+        maxlength="4"
+      />
+      <div id="f-bts">
+        <input type="submit" name="f-sub" value="submit" />
+        <input type="reset" name="f-reset" value="reset" />
+        <input type="button" name="f-button" value="?" />
+      </div>
+    </form>
+
+    <h3>CHECKBOX</h3>
+
+    <form class="espaço-T" name="checkboX" action="#" method="get">
+      <label class="quebra">SELEÇAO DE CORES</label>
+      <input type="checkbox" name="?-?" />azul
+      <input type="checkbox" name="?-?" />verde
+      <input type="checkbox" name="?-?" />vermelho
+      <input class="quebra espaço-T" type="submit" value="Confirma" />
+    </form>
+
+    <h3>RADIO</h3>
+
+    <form action="#" name="radio" class="" method="get">
+      <label class="quebra">ME ODEIA</label>
+      <input type="radio" name="odio?" />S
+
+      <input type="radio" name="odio?" />N
+      <input class="quebra espaço-T" type="submit" value="ENVIAR" />
+    </form>
+
+    <h3>TIME</h3>
+
+    <form action="#" method="get" name="Hora">
+      <label class="quebra">TIME</label>
+      <input type="time" name="HR" required />
+      <input class="quebra espaço-T" type="submit" name="butao" />
+    </form>
+
+    <h3>DATE</h3>
+
+    <form action="#" name="datas" method="get">
+      <fieldset>
+        <legend>DATA</legend>
+
+        <input type="date" name="datas " required />
+      </fieldset>
+      <fieldset>
+        <legend>DATA E HORA</legend>
+
+        <input type="datetime-local" name="data-hora" required />
+        <input class="quebra espaço-T" type="submit" name="botao" />
+      </fieldset>
+    </form>
+
+    <h3>WEEK MONTH</h3>
+
+    <form action="#" name="SEMANA-MES " method="get">
+      <fieldset>
+        <legend>SEMANAS</legend>
+        <input class="quebra" type="week" name="semana" required />
+      </fieldset>
+      <fieldset>
+        <legend>MESES</legend>
+        <input class="quebra" type="month" name="mes" required />
+        <input class="quebra" type="submit" name="botao" />
+      </fieldset>
+    </form>
+
+    <h3>COLOR</h3>
+
+    <form action="#" method="get " name="cor">
+      <label class="quebra">ESCOLHA UMA COR</label>
+      <input class="quebra" type="color" name="colors" />
+      <input type="submit" name="botao" />
+    </form>
+
+    <h3>IMAGE</h3>
+
+    <form action="#" name="img" method="get">
+      <input type="image" src="" name="img" />
+    </form>
+
+    <h3>EMAIL</h3>
+
+    <form action="#" method="get" name="email">
+      <label>EMAIL</label>
+      <input class="quebra" type="email" name="gmail" />
+      <input type="submit" name="botao" />
+    </form>
+
+    <h3>NUMBER</h3>
+
+    <form action="#" method="get" name="number">
+      <label class="quebra">ESCOLHA NUMERO</label>
+      <input type="number" step="3" min="0" max="30" />
+      <input class="quebra espaço-T" type="submit" name="botao" />
+    </form>
+    <h3>SERCH</h3>
+    <form action="#" method="get" name="serch">
+      <label class="quebra">PESQUISA</label>
+      <input type="search" name="pesquisa" />
+      <input class="quebra espaço-T" type="submit" name="botao" />
+    </form>
+
+    <h3>LIST</h3>
+
+    <form action="#" name="list" method="get">
+      <input list="Listas" name="esport" />
+      <datalist id="Listas">
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+      </datalist>
+      <input class="quebra espaço-T" type="submit" name="botao" />
+    </form>
+    <h3>COMENTARIOS</h3>
+    <form action="#" method="get" name="textarea">
+      <fieldset>
+        <legend>comente</legend>
+        <textarea name="comentarios" cols="30" rows="2" maxlength="100">
+!!!</textarea
+        >
+        <input class="quebra espaço-T" type="submit" name="button" />
+      </fieldset>
+    </form>
+
+    <h2>SELECT</h2>
+
+    <p>
+      O elemento HTML select (select) representa um controle que apresenta um
+      <br />
+      menu de opções. As opções dentro do menu são representadas pelo elemento
+      <br />
+      option , que podem ser agrupados por elementos optgroup . As opções podem
+      ser pré-selecionadas para o usuário.
+    </p>
+    <h3>OPTIONS</h3>
+    <form action="#" name="select" method="get">
+      <select>
+        <option>I</option>
+        <option>II</option>
+        <option>III</option>
+        <option>IIII</option>
+        <option>IIIII</option>
+        <option>IIIIII</option>
+      </select>
+      <input class="quebra espaço-T" type="submit" name="botao" />
+    </form>
+
+    <h3>OPTIONS2</h3>
+
+    <form action="#" name="select2" method="get">
+      <select name="seleciona" multiple size="1">
+        <option>IIIIII</option>
+        <option>IIIII</option>
+        <option>IIII</option>
+        <option>III</option>
+        <option>II</option>
+        <option>I</option>
+      </select>
+      <input class="quebra espaço-T" type="submit" name="botao" />
+    </form>
+  </body>
+</html>
